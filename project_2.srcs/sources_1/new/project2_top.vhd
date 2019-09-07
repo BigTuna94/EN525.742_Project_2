@@ -41,17 +41,19 @@ architecture Behavioral of project2_top is
   signal reset : std_logic;
   signal clk : std_logic;
   signal audio_out_word : std_logic_vector(31 downto 0);
+  signal audio_data_latched : std_logic;
 begin
 
+    -- Connect audio codec - resource: http://hamsterworks.co.nz/mediawiki/index.php/Zedboard_Audio    
     ll_dac_gen: entity lowlevel_dac_intfc port map (
       rst => reset,
       clk100 => clk,
       data_word => audio_out_word,
-      sdata
-      lrck
-      bclk
-      mclk
-      latched_data
+      sdata => AC_GPIO0,
+      lrck => AC_GPIO3,
+      bclk => AC_GPIO2,
+      mclk=> AC_MCLK,
+      latched_data => audio_data_latched 
     ); 
 
 end Behavioral;

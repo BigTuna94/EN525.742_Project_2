@@ -325,3 +325,11 @@ selectCodeEditor("zedboard_master_XDC_RevC_D_v3.xdc", 456, 297); // cd (w, cj)
 // TclEventType: DG_GRAPH_GENERATED
 // HMemoryUtils.trashcanNow. Engine heap size: 1,371 MB. GUI used memory: 50 MB. Current time: 9/4/19 8:16:30 PM EDT
 // TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,371 MB. GUI used memory: 92 MB. Current time: 9/5/19 7:14:32 AM EDT
+// [GUI Memory]: 120 MB (+15427kb) [11:21:09]
+// [GUI Memory]: 133 MB (+7007kb) [11:21:32]
+// Elapsed time: 39785 seconds
+selectCodeEditor("zedboard_master_XDC_RevC_D_v3.xdc", 291, 55); // cd (w, cj)
+selectCodeEditor("zedboard_master_XDC_RevC_D_v3.xdc", 543, 143); // cd (w, cj)
+// [GUI Memory]: 141 MB (+1067kb) [11:22:16]
+// [GUI Memory]: 148 MB (+461kb) [11:22:41]
