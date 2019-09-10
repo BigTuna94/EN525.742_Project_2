@@ -1,0 +1,15 @@
+22:01:12 **** Incremental Build of configuration Debug for project project2 ****
+make all 
+'Building file: ../src/codec.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/codec.o" -I../../project2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/codec.d" -MT"src/codec.o" -o "src/codec.o" "../src/codec.c"
+../src/codec.c:12:13: warning: 'push_to_fifo' defined but not used [-Wunused-function]
+ static void push_to_fifo(uint8_t data) {
+             ^~~~~~~~~~~~
+C:\Users\Zach\AppData\Local\Temp\ccMJUNiK.s: Assembler messages:
+C:\Users\Zach\AppData\Local\Temp\ccMJUNiK.s:60: Error: register expected, but saw 'rfslFS'
+C:\Users\Zach\AppData\Local\Temp\ccMJUNiK.s:60: Warning: ignoring operands: rfslFSL_ID 
+make: *** [src/codec.o] Error 1
+
+22:01:12 Build Finished (took 237ms)
+

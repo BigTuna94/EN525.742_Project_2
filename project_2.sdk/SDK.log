@@ -1,0 +1,23 @@
+20:33:30 INFO  : Registering command handlers for SDK TCF services
+20:33:30 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Zach\Documents\GradSchool\Fall_2019\EN525.742_SOC_Design_Lab\EN525.742_Project_2\project_2.sdk\temp_xsdb_launch_script.tcl
+20:33:32 INFO  : XSCT server has started successfully.
+20:33:32 INFO  : Successfully done setting XSCT server connection channel  
+20:33:33 INFO  : Successfully done setting SDK workspace  
+20:33:33 INFO  : Processing command line option -hwspec C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.sdk/project2_top.hdf.
+21:49:48 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1568080164805,  Project:1568075466999
+21:49:48 INFO  : Project project2_top_hw_platform_0's source hardware specification located at C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.sdk/project2_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+21:50:11 INFO  : Copied contents of C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.sdk/project2_top.hdf into \project2_top_hw_platform_0\system.hdf.
+21:50:11 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:50:13 INFO  : 
+21:50:14 INFO  : Updating hardware inferred compiler options for project2.
+21:50:14 INFO  : Clearing existing target manager status.
+21:50:14 WARN  : Given IPC port value is invalid. Using default port 2350
+21:50:14 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+21:50:15 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+21:50:15 INFO  : Closing and re-opening the MSS file of ther project project2_bsp
+21:50:15 INFO  : Closing and re-opening the MSS file of ther project project2_bsp
+21:50:16 INFO  : Closing and re-opening the MSS file of ther project project2_bsp
+21:50:16 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+21:50:16 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+21:52:38 INFO  : Example project project2_bsp_xspi_low_level_example_1 has been created successfully.

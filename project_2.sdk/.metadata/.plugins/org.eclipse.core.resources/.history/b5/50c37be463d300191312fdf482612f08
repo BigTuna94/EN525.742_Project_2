@@ -1,0 +1,31 @@
+/*
+ * codec.c
+ *
+ *  Created on: Sep 9, 2019
+ *      Author: Zach
+ */
+
+static void write_rec(uint16_t reg, uint8_t val) {
+
+}
+
+
+static void configure_codec(void)
+{
+	write_reg(0x4000,1);
+	write_reg(0x4000,1);
+	write_reg(0x4000,1);
+	write_reg(0x4000,1);
+	write_reg(0x40f9,0x7f);
+	write_reg(0x40fa,0x3);
+	write_reg(0x401c,0x2d);
+	write_reg(0x401e,0x4d);
+	write_reg(0x4020,5);
+	write_reg(0x4021,0x11);
+	write_reg(0x4025,0xe6);
+	write_reg(0x4026,0xe6);
+	write_reg(0x4029,3);
+	write_reg(0x402a,3);
+	write_reg(0x4016,0x21);
+	write_reg(0x40F2,0x1);
+}
