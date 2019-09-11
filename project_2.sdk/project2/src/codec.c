@@ -6,12 +6,9 @@
  */
 #include <stdint.h>
 #include "xparameters.h"
-#include "fsl.h" // should probably pull into it's own lib
 #include "xspi_l.h"
 
-static void push_to_fifo(uint8_t data) {
-	putfslx(data, FSL_ID, FSL_DEFAULT);
-}
+#include "codec.h"
 
 /*
  * Reference: https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1761.pdf

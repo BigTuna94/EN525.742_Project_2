@@ -35,7 +35,10 @@ entity project2_top is Port (
     AC_SCK    : out std_logic;  -- CODEC SPI Clock
     AC_SDA    : in std_logic;   -- CODEC SPI Data Output
     uart_tx   : out std_logic;  -- PMOD UART TX
-    uart_rx   : in std_logic    -- PMOR UART RX
+    uart_rx   : in std_logic;   -- PMOR UART RX
+    SW0       : in std_logic;   -- for reset
+    GCLK      : in std_logic;    -- for system clock
+    LEDS      : out std_logic_vector(7 downto 0)
   );
 end project2_top;
 
@@ -50,6 +53,7 @@ architecture Behavioral of project2_top is
       M_AXIS_tlast : out STD_LOGIC;
       Clk : in STD_LOGIC;
       reset_rtl : in STD_LOGIC;
+      leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
       axis_fifo_aresetn : in STD_LOGIC;
       spi_rtl_io0_i : in STD_LOGIC;
       spi_rtl_io0_o : out STD_LOGIC;
@@ -138,6 +142,7 @@ begin
         reset_rtl => reset,
         uart_rtl_rxd => uart_rx,
         uart_rtl_txd => uart_tx,
+        leds_8bits_tri_o => LEDS,
         spi_rtl_io0_i => spi_rtl_io0_i,
         spi_rtl_io0_o => spi_rtl_io0_o,
         spi_rtl_io0_t => spi_rtl_io0_t,
@@ -187,5 +192,8 @@ begin
     AC_SCK <= spi_rtl_sck_o;
     AC_ADR0 <= spi_rtl_ss_o_0(0);
     
+    
+    reset <= SW0;
+    clk <= GCLK;
     
 end Behavioral;

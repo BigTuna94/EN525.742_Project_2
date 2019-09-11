@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
-| Date         : Mon Sep  9 21:46:41 2019
+| Date         : Tue Sep 10 20:42:06 2019
 | Host         : ZPCX running 64-bit major release  (build 9200)
 | Command      : report_utilization -file proc_system_dlmb_bram_if_cntlr_0_utilization_synth.rpt -pb proc_system_dlmb_bram_if_cntlr_0_utilization_synth.pb
 | Design       : proc_system_dlmb_bram_if_cntlr_0

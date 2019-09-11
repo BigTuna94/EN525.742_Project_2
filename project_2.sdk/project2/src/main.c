@@ -31,7 +31,6 @@
 ******************************************************************************/
 
 /*
- * main.c: simple test application
  *
  * This application configures UART 16550 to baud rate 9600.
  * PS7 UART (Zynq) is not initialized by this application, since
@@ -48,15 +47,39 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
-
 #include "codec.h"
+#include "audio_fifo.h"
+
+#define NUM_SIN_STEPS 9
 
 
 int main()
 {
     init_platform();
+    xil_printf("\n\n=================== Zach Richard - MicroBlaze Started! ===================\n\n");
 
+    xil_printf("Initializing codec...");
     init_codec();
+    xil_printf("done.\n");
+
+    // sin(i*pi/4) * 16383 + 16383
+    uint16_t sin_0_to_2pi_scaled[NUM_SIN_STEPS] = {
+    	16383, 	// sin(0pi/4)
+		27968, 	// sin(1pi/4
+		32766, 	// sin(2pi/4)
+		27968, 	// sin(3pi/4)
+		16383, 	// sin(4pi/4)
+		 4798,  // sin(5pi/4)
+		    0,  // sin(6pi/4)
+		 4798,  // sin(7pi/4)
+		 16383, // sin(8pi/4)
+    };
+
+    while(1) {
+    	for (int i = 0; i < NUM_SIN_STEPS; i++) {
+    		push_to_fifo(sin_0_to_2pi_scaled[i]);
+    	}
+    }
 
     cleanup_platform();
     return 0;

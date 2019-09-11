@@ -47,4 +47,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==proc_system_axi
 # IP: bd/proc_system/ip/proc_system_xbar_0/proc_system_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==proc_system_xbar_0 || ORIG_REF_NAME==proc_system_xbar_0} -quiet] -quiet
 
+# IP: bd/proc_system/ip/proc_system_axi_gpio_0_0/proc_system_axi_gpio_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==proc_system_axi_gpio_0_0 || ORIG_REF_NAME==proc_system_axi_gpio_0_0} -quiet] -quiet
+
 # XDC: bd/proc_system/proc_system_ooc.xdc

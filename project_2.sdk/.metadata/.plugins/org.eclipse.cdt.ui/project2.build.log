@@ -1,15 +1,21 @@
-22:01:12 **** Incremental Build of configuration Debug for project project2 ****
+21:13:10 **** Auto Build of configuration Debug for project project2 ****
 make all 
-'Building file: ../src/codec.c'
+'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/codec.o" -I../../project2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/codec.d" -MT"src/codec.o" -o "src/codec.o" "../src/codec.c"
-../src/codec.c:12:13: warning: 'push_to_fifo' defined but not used [-Wunused-function]
- static void push_to_fifo(uint8_t data) {
-             ^~~~~~~~~~~~
-C:\Users\Zach\AppData\Local\Temp\ccMJUNiK.s: Assembler messages:
-C:\Users\Zach\AppData\Local\Temp\ccMJUNiK.s:60: Error: register expected, but saw 'rfslFS'
-C:\Users\Zach\AppData\Local\Temp\ccMJUNiK.s:60: Warning: ignoring operands: rfslFSL_ID 
-make: *** [src/codec.o] Error 1
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../project2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: project2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../project2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "project2.elf"  ./src/audio_fifo.o ./src/codec.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: project2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size project2.elf  |tee "project2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6936	    272	   3104	  10312	   2848	project2.elf
+'Finished building: project2.elf.size'
+' '
 
-22:01:12 Build Finished (took 237ms)
+21:13:10 Build Finished (took 490ms)
 

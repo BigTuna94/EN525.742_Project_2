@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
---Date        : Mon Sep  9 21:46:01 2019
+--Date        : Tue Sep 10 20:41:25 2019
 --Host        : ZPCX running 64-bit major release  (build 9200)
 --Command     : generate_target proc_system_wrapper.bd
 --Design      : proc_system_wrapper
@@ -19,6 +19,7 @@ entity proc_system_wrapper is
     M_AXIS_tready : in STD_LOGIC;
     M_AXIS_tvalid : out STD_LOGIC;
     axis_fifo_aresetn : in STD_LOGIC;
+    leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
     reset_rtl : in STD_LOGIC;
     spi_rtl_io0_io : inout STD_LOGIC;
     spi_rtl_io1_io : inout STD_LOGIC;
@@ -38,21 +39,22 @@ architecture STRUCTURE of proc_system_wrapper is
     M_AXIS_tready : in STD_LOGIC;
     M_AXIS_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     M_AXIS_tlast : out STD_LOGIC;
-    Clk : in STD_LOGIC;
-    reset_rtl : in STD_LOGIC;
-    axis_fifo_aresetn : in STD_LOGIC;
     spi_rtl_io0_i : in STD_LOGIC;
     spi_rtl_io0_o : out STD_LOGIC;
     spi_rtl_io0_t : out STD_LOGIC;
     spi_rtl_io1_i : in STD_LOGIC;
     spi_rtl_io1_o : out STD_LOGIC;
     spi_rtl_io1_t : out STD_LOGIC;
+    spi_rtl_sck_i : in STD_LOGIC;
+    spi_rtl_sck_o : out STD_LOGIC;
+    spi_rtl_sck_t : out STD_LOGIC;
     spi_rtl_ss_i : in STD_LOGIC_VECTOR ( 0 to 0 );
     spi_rtl_ss_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     spi_rtl_ss_t : out STD_LOGIC;
-    spi_rtl_sck_i : in STD_LOGIC;
-    spi_rtl_sck_o : out STD_LOGIC;
-    spi_rtl_sck_t : out STD_LOGIC
+    Clk : in STD_LOGIC;
+    reset_rtl : in STD_LOGIC;
+    axis_fifo_aresetn : in STD_LOGIC;
+    leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component proc_system;
   component IOBUF is
@@ -85,6 +87,7 @@ proc_system_i: component proc_system
       M_AXIS_tready => M_AXIS_tready,
       M_AXIS_tvalid => M_AXIS_tvalid,
       axis_fifo_aresetn => axis_fifo_aresetn,
+      leds_8bits_tri_o(7 downto 0) => leds_8bits_tri_o(7 downto 0),
       reset_rtl => reset_rtl,
       spi_rtl_io0_i => spi_rtl_io0_i,
       spi_rtl_io0_o => spi_rtl_io0_o,
