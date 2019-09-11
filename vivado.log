@@ -1,27 +1,60 @@
 #-----------------------------------------------------------
 # Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Sep  7 15:30:28 2019
-# Process ID: 5268
-# Current directory: C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4708 C:\Users\Zach\Documents\GradSchool\Fall_2019\EN525.742_SOC_Design_Lab\EN525.742_Project_2\project_2.xpr
-# Log file: C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/vivado.log
-# Journal file: C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2\vivado.jou
+# Start of session at: Wed Sep 11 15:33:46 2019
+# Process ID: 26802
+# Current directory: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2
+# Command line: vivado project_2.xpr
+# Log file: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/vivado.log
+# Journal file: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.xpr
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2'
-INFO: [Project 1-313] Project file moved from '/home/zach/git/grad_school/EN525.742_Project_2' since last save.
+open_project project_2.xpr
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/Users/Zach/Documents/GradSchool/Documents/vivado-boards-master/new/board_files', nor could it be found using path 'C:/home/zach/Documents/vivado-boards-master/new/board_files'.
-WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.ip_user_files', nor could it be found using path 'C:/home/zach/git/grad_school/EN525.742_Project_2/project_2.ip_user_files'.
-CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:zedboard:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory '/home/zach/git/Documents/vivado-boards-master/new/board_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 6377.859 ; gain = 181.059 ; free physical = 17581 ; free virtual = 52146
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Sat Sep  7 15:31:22 2019...
+launch_runs synth_1 -jobs 10
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'proc_system_microblaze_0_axi_periph_0' found in library 'xil_defaultlib'
+[Wed Sep 11 15:35:44 2019] Launched synth_1...
+Run output will be captured here: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Wed Sep 11 15:36:51 2019] Launched impl_1...
+Run output will be captured here: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Sep 11 15:38:37 2019] Launched impl_1...
+Run output will be captured here: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Wed Sep 11 15:51:20 2019] Launched synth_1...
+Run output will be captured here: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/runme.log
+[Wed Sep 11 15:51:20 2019] Launched impl_1...
+Run output will be captured here: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Sep 11 15:57:26 2019] Launched synth_1...
+Run output will be captured here: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/runme.log
+[Wed Sep 11 15:57:26 2019] Launched impl_1...
+Run output will be captured here: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Sep 11 16:29:11 2019] Launched synth_1...
+Run output will be captured here: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/runme.log
+[Wed Sep 11 16:29:11 2019] Launched impl_1...
+Run output will be captured here: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Wed Sep 11 16:36:37 2019] Launched synth_1...
+Run output will be captured here: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/runme.log
+[Wed Sep 11 16:36:38 2019] Launched impl_1...
+Run output will be captured here: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/impl_1/runme.log
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.sdk -hwspec /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.sdk/project2_top.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.sdk -hwspec /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.sdk/project2_top.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.

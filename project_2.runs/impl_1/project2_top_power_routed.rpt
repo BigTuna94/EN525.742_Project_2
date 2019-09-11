@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
-| Date             : Tue Sep 10 20:44:39 2019
-| Host             : ZPCX running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date             : Wed Sep 11 16:39:02 2019
+| Host             : zmsilx-localhost running 64-bit Fedora release 30 (Thirty)
 | Command          : report_power -file project2_top_power_routed.rpt -pb project2_top_power_summary_routed.pb -rpx project2_top_power_routed.rpx
 | Design           : project2_top
 | Device           : xc7z020clg484-1
@@ -54,14 +54,14 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.010 |        5 |       --- |             --- |
 | Slice Logic              |     0.005 |     5467 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     1953 |     53200 |            3.67 |
+|   LUT as Logic           |     0.003 |     1959 |     53200 |            3.68 |
 |   LUT as Distributed RAM |    <0.001 |       80 |     17400 |            0.46 |
 |   Register               |    <0.001 |     2083 |    106400 |            1.96 |
 |   CARRY4                 |    <0.001 |       65 |     13300 |            0.49 |
 |   F7/F8 Muxes            |    <0.001 |      113 |     53200 |            0.21 |
 |   LUT as Shift Register  |    <0.001 |       77 |     17400 |            0.44 |
 |   Others                 |    <0.001 |      570 |       --- |             --- |
-| Signals                  |     0.007 |     3742 |       --- |             --- |
+| Signals                  |     0.007 |     3722 |       --- |             --- |
 | Block RAM                |     0.008 |       17 |       140 |           12.14 |
 | I/O                      |     0.006 |       20 |       200 |           10.00 |
 | Static Power             |     0.107 |          |           |                 |
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.037 |       0.029 |      0.008 |
+| Vccint    |       1.000 |     0.036 |       0.029 |      0.008 |
 | Vccaux    |       1.800 |     0.011 |       0.000 |      0.010 |
 | Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -690,7 +690,7 @@ Table of Contents
 |                 OF_EX_MSR_Bits[28].Using_FDR.MSR_ex_I                                          |    <0.001 |
 |                 OF_EX_MSR_Bits[29].Using_FDR.MSR_ex_I                                          |    <0.001 |
 |                 OF_EX_MSR_Bits[30].Using_FDR.MSR_ex_I                                          |    <0.001 |
-|             Decode_I                                                                           |     0.006 |
+|             Decode_I                                                                           |     0.005 |
 |               PC_Module_I                                                                      |    <0.001 |
 |                 Instruction_Prefetch_Mux[0].Gen_Instr_DFF                                      |    <0.001 |
 |                 Instruction_Prefetch_Mux[0].PC_Mux_MUXF7                                       |    <0.001 |
@@ -938,20 +938,20 @@ Table of Contents
 |                 MUXCY_I                                                                        |    <0.001 |
 |               if_pc_incr_carry_and_3                                                           |     0.000 |
 |                 MUXCY_I                                                                        |     0.000 |
-|               jump_logic_I1                                                                    |     0.001 |
+|               jump_logic_I1                                                                    |    <0.001 |
 |                 MUXCY_JUMP_CARRY                                                               |    <0.001 |
 |                 MUXCY_JUMP_CARRY2                                                              |    <0.001 |
 |                 MUXCY_JUMP_CARRY3                                                              |    <0.001 |
 |                 MUXCY_JUMP_CARRY4                                                              |    <0.001 |
 |                 MUXCY_JUMP_CARRY5                                                              |     0.000 |
-|                 MUXCY_JUMP_CARRY6                                                              |     0.001 |
+|                 MUXCY_JUMP_CARRY6                                                              |    <0.001 |
 |               mem_PipeRun_carry_and                                                            |    <0.001 |
 |                 MUXCY_I                                                                        |    <0.001 |
 |               mem_wait_on_ready_N_carry_or                                                     |    <0.001 |
 |                 MUXCY_I                                                                        |    <0.001 |
 |             Use_DBUS.DAXI_Interface_I1                                                         |    <0.001 |
 |             Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1                                           |    <0.001 |
-|             Use_Debug_Logic.Master_Core.Debug_Perf                                             |    <0.001 |
+|             Use_Debug_Logic.Master_Core.Debug_Perf                                             |     0.001 |
 |               Serial_Dbg_Intf.SRL16E_1                                                         |    <0.001 |
 |               Serial_Dbg_Intf.SRL16E_2                                                         |    <0.001 |
 |               Serial_Dbg_Intf.SRL16E_3                                                         |    <0.001 |

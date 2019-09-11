@@ -19,26 +19,26 @@ preplace inst microblaze_0 -pg 1 -lvl 2 -y 150 -defaultsOSRD
 preplace inst microblaze_0_local_memory -pg 1 -lvl 3 -y 150 -defaultsOSRD
 preplace inst axi_quad_spi_0 -pg 1 -lvl 4 -y 570 -defaultsOSRD
 preplace netloc axi_quad_spi_0_SPI_0 1 4 1 NJ
-preplace netloc microblaze_0_M0_AXIS 1 2 2 900 60 NJ
-preplace netloc rst_Clk_100M_mb_reset 1 1 1 380
-preplace netloc microblaze_0_Clk 1 0 4 20 250 390 250 920 50 1200
-preplace netloc microblaze_0_axi_periph_M00_AXI 1 3 1 1220
-preplace netloc microblaze_0_M_AXI_DP 1 2 1 910
+preplace netloc microblaze_0_M0_AXIS 1 2 2 920 60 NJ
+preplace netloc rst_Clk_100M_mb_reset 1 1 1 400
+preplace netloc microblaze_0_Clk 1 0 4 20 250 410 250 940 50 1240
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 3 1 1260
+preplace netloc microblaze_0_M_AXI_DP 1 2 1 930
 preplace netloc microblaze_0_ilmb_1 1 2 1 N
-preplace netloc microblaze_0_axi_periph_M01_AXI 1 3 1 1190
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 3 1 1230
 preplace netloc axi_gpio_0_GPIO 1 4 1 NJ
 preplace netloc axi_uartlite_0_UART 1 4 1 NJ
-preplace netloc s_axis_aresetn_0_1 1 0 4 NJ 260 NJ 260 890 30 1210
-preplace netloc microblaze_0_axi_periph_M02_AXI 1 3 1 N
+preplace netloc s_axis_aresetn_0_1 1 0 4 NJ 260 NJ 260 910 30 1250
 preplace netloc axis_data_fifo_0_M_AXIS 1 4 1 NJ
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 3 1 N
 preplace netloc microblaze_0_dlmb_1 1 2 1 N
 preplace netloc microblaze_0_debug 1 1 1 N
-preplace netloc rst_Clk_100M_interconnect_aresetn 1 1 2 410J 330 N
-preplace netloc rst_Clk_100M_peripheral_aresetn 1 1 3 NJ 390 900 230 1230J
-preplace netloc mdm_1_debug_sys_rst 1 0 2 30 220 370
-preplace netloc rst_Clk_100M_bus_struct_reset 1 1 2 400 240 930J
+preplace netloc rst_Clk_100M_interconnect_aresetn 1 1 2 430J 330 N
+preplace netloc rst_Clk_100M_peripheral_aresetn 1 1 3 NJ 390 920 230 1270J
+preplace netloc mdm_1_debug_sys_rst 1 0 2 30 220 390
+preplace netloc rst_Clk_100M_bus_struct_reset 1 1 2 420 240 950J
 preplace netloc reset_rtl_1 1 0 1 NJ
-levelinfo -pg 1 0 200 650 1060 1390 1570 -top 0 -bot 650
+levelinfo -pg 1 0 210 670 1090 1440 1630 -top 0 -bot 650
 ",
 }
 {

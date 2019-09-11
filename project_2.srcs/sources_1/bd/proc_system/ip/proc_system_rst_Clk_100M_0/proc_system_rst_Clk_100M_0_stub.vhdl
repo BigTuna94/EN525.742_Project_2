@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
--- Date        : Sat Sep  7 17:30:18 2019
--- Host        : ZPCX running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+-- Date        : Wed Sep 11 09:06:45 2019
+-- Host        : zmsilx-localhost running 64-bit Fedora release 30 (Thirty)
 -- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/ip/proc_system_rst_Clk_100M_0/proc_system_rst_Clk_100M_0_stub.vhdl
+--               /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/ip/proc_system_rst_Clk_100M_0/proc_system_rst_Clk_100M_0_stub.vhdl
 -- Design      : proc_system_rst_Clk_100M_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1
@@ -34,6 +34,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "slowest_sync_clk,ext_reset_in,aux_reset_in,mb_debug_sys_rst,dcm_locked,mb_reset,bus_struct_reset[0:0],peripheral_reset[0:0],interconnect_aresetn[0:0],peripheral_aresetn[0:0]";
 attribute x_core_info : string;
-attribute x_core_info of stub : architecture is "proc_sys_reset,Vivado 2017.4.1";
+attribute x_core_info of stub : architecture is "proc_sys_reset,Vivado 2017.4";
 begin
 end;

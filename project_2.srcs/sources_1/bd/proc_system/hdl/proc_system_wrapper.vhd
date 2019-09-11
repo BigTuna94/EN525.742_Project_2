@@ -1,8 +1,8 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
---Date        : Tue Sep 10 20:41:25 2019
---Host        : ZPCX running 64-bit major release  (build 9200)
+--Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+--Date        : Wed Sep 11 09:08:53 2019
+--Host        : zmsilx-localhost running 64-bit Fedora release 30 (Thirty)
 --Command     : generate_target proc_system_wrapper.bd
 --Design      : proc_system_wrapper
 --Purpose     : IP block netlist
@@ -51,10 +51,10 @@ architecture STRUCTURE of proc_system_wrapper is
     spi_rtl_ss_i : in STD_LOGIC_VECTOR ( 0 to 0 );
     spi_rtl_ss_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     spi_rtl_ss_t : out STD_LOGIC;
+    leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
     Clk : in STD_LOGIC;
     reset_rtl : in STD_LOGIC;
-    axis_fifo_aresetn : in STD_LOGIC;
-    leds_8bits_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 )
+    axis_fifo_aresetn : in STD_LOGIC
   );
   end component proc_system;
   component IOBUF is

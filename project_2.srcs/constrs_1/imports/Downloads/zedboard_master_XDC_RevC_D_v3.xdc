@@ -182,14 +182,22 @@ set_property PACKAGE_PIN W17  [get_ports {HD_VSYNC}];  # "HD-VSYNC"
 #set_property PACKAGE_PIN W22 [get_ports {LD5}];  # "LD5"
 #set_property PACKAGE_PIN U19 [get_ports {LD6}];  # "LD6"
 #set_property PACKAGE_PIN U14 [get_ports {LD7}];  # "LD7"
-set_property PACKAGE_PIN T22 [get_ports {LED[0])}];  # "LD0"
-set_property PACKAGE_PIN T21 [get_ports {LED[1])}];  # "LD1"
-set_property PACKAGE_PIN U22 [get_ports {LED[2]}];  # "LD2"
-set_property PACKAGE_PIN U21 [get_ports {LED[3]}];  # "LD3"
-set_property PACKAGE_PIN V22 [get_ports {LED[4]}];  # "LD4"
-set_property PACKAGE_PIN W22 [get_ports {LED[5]}];  # "LD5"
-set_property PACKAGE_PIN U19 [get_ports {LED[6]}];  # "LD6"
-set_property PACKAGE_PIN U14 [get_ports {LED[7]}];  # "LD7"
+set_property PACKAGE_PIN T22 [get_ports {LEDS[0]}];  # "LD0"
+set_property PACKAGE_PIN T21 [get_ports {LEDS[1]}];  # "LD1"
+set_property PACKAGE_PIN U22 [get_ports {LEDS[2]}];  # "LD2"
+set_property PACKAGE_PIN U21 [get_ports {LEDS[3]}];  # "LD3"
+set_property PACKAGE_PIN V22 [get_ports {LEDS[4]}];  # "LD4"
+set_property PACKAGE_PIN W22 [get_ports {LEDS[5]}];  # "LD5"
+set_property PACKAGE_PIN U19 [get_ports {LEDS[6]}];  # "LD6"
+set_property PACKAGE_PIN U14 [get_ports {LEDS[7]}];  # "LD7"
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[0]}];
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[1]}];
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[2]}];
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[3]}];
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[4]}];
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[5]}];
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[6]}];
+set_property IOSTANDARD LVCMOS33 [get_ports {LEDS[7]}];
 
 # ----------------------------------------------------------------------------
 # VGA Output - Bank 33
