@@ -1,82 +1,9 @@
-21:09:22 **** Incremental Build of configuration Debug for project project2 ****
+18:54:35 **** Incremental Build of configuration Debug for project project2 ****
 make all 
-make: Nothing to be done for `all'.
-21:09:28 **** Incremental Build of configuration Debug for project project2 ****
+make: Nothing to be done for 'all'.
+18:56:49 **** Incremental Build of configuration Debug for project project2 ****
 make all 
-make: Nothing to be done for `all'.
-21:10:16 **** Incremental Build of configuration Debug for project project2 ****
+make: Nothing to be done for 'all'.
+18:56:50 **** Incremental Build of configuration Debug for project project2_bsp_xspi_low_level_example_1 ****
 make all 
-make: Nothing to be done for `all'.
-21:11:37 **** Auto Build of configuration Debug for project project2 ****
-make all 
-'Building file: ../src/audio_fifo.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio_fifo.o" -I../../project2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/audio_fifo.d" -MT"src/audio_fifo.o" -o "src/audio_fifo.o" "../src/audio_fifo.c"
-'Finished building: ../src/audio_fifo.c'
-' '
-'Building target: project2.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../project2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "project2.elf"  ./src/audio_fifo.o ./src/codec.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: project2.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size project2.elf  |tee "project2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   6140	    272	   3108	   9520	   2530	project2.elf
-'Finished building: project2.elf.size'
-' '
-21:11:41 **** Incremental Build of configuration Debug for project project2 ****
-make all 
-make: Nothing to be done for `all'.
-21:12:42 **** Auto Build of configuration Debug for project project2 ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../project2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:62:16: error: expected expression before 'void'
-     init_codec(void);
-                ^~~~
-../src/main.c:62:5: error: too many arguments to function 'init_codec'
-     init_codec(void);
-     ^~~~~~~~~~
-In file included from ../src/main.c:50:0:
-../src/codec.h:11:6: note: declared here
- void init_codec(void);
-      ^~~~~~~~~~
-make: *** [src/main.o] Error 1
-21:12:58 **** Incremental Build of configuration Debug for project project2 ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../project2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:62:16: error: expected expression before 'void'
-     init_codec(void);
-                ^~~~
-../src/main.c:62:5: error: too many arguments to function 'init_codec'
-     init_codec(void);
-     ^~~~~~~~~~
-In file included from ../src/main.c:50:0:
-../src/codec.h:11:6: note: declared here
- void init_codec(void);
-      ^~~~~~~~~~
-make: *** [src/main.o] Error 1
-21:13:10 **** Auto Build of configuration Debug for project project2 ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../project2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: project2.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../project2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "project2.elf"  ./src/audio_fifo.o ./src/codec.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: project2.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size project2.elf  |tee "project2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   6936	    272	   3104	  10312	   2848	project2.elf
-'Finished building: project2.elf.size'
-' '
+make: Nothing to be done for 'all'.

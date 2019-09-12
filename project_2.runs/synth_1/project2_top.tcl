@@ -16,6 +16,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
+set_param tcl.collectionResultDisplayLimit 0
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -29,6 +31,9 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property ip_output_repo /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
+add_files /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.sdk/project2/Debug/project2.elf
+set_property SCOPED_TO_REF proc_system [get_files -all /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.sdk/project2/Debug/project2.elf]
+set_property SCOPED_TO_CELLS microblaze_0 [get_files -all /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.sdk/project2/Debug/project2.elf]
 read_vhdl -library xil_defaultlib {
   /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/imports/project_1_part_2.srcs/sources_1/imports/p1p2_src/lowlevel_dac_intfc.vhd
   /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd
@@ -63,6 +68,12 @@ set_property used_in_implementation false [get_files -all /home/zach/git/grad_sc
 set_property used_in_implementation false [get_files -all /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/ip/proc_system_axi_gpio_0_0/proc_system_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/ip/proc_system_axi_gpio_0_0/proc_system_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/proc_system_ooc.xdc]
+
+read_ip -quiet /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/ip/ila_0/ila_0.xci
+set_property used_in_synthesis false [get_files -all /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

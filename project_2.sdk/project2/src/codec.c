@@ -31,6 +31,13 @@ static void write_reg(uint32_t reg, uint32_t val) {
 }
 
 
+static void init_spi(void) {
+	uint32_t Control = XSpi_ReadReg(XPAR_SPI_0_BASEADDR, XSP_CR_OFFSET);
+	Control |= XSP_CR_ENABLE_MASK;
+	Control &= ~XSP_CR_TRANS_INHIBIT_MASK;
+	XSpi_WriteReg(XPAR_SPI_0_BASEADDR, XSP_CR_OFFSET, Control);
+}
+
 static void configure_codec(void) {
 	write_reg(0x4000,1);
 	write_reg(0x4000,1);
@@ -52,5 +59,6 @@ static void configure_codec(void) {
 
 
 void init_codec(void) {
+	init_spi();
 	configure_codec();
 }

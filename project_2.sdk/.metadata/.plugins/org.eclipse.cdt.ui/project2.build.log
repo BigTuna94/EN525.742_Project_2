@@ -1,21 +1,6 @@
-21:13:10 **** Auto Build of configuration Debug for project project2 ****
+18:56:49 **** Incremental Build of configuration Debug for project project2 ****
 make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../project2_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: project2.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../project2_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "project2.elf"  ./src/audio_fifo.o ./src/codec.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: project2.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size project2.elf  |tee "project2.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   6936	    272	   3104	  10312	   2848	project2.elf
-'Finished building: project2.elf.size'
-' '
+make: Nothing to be done for 'all'.
 
-21:13:10 Build Finished (took 490ms)
+18:56:50 Build Finished (took 210ms)
 

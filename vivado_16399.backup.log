@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Sep 11 09:10:02 2019
+# Process ID: 16399
+# Current directory: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2
+# Command line: vivado project_2.xpr
+# Log file: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/vivado.log
+# Journal file: /home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/home/zach/.Xilinx/Vivado/Vivado_init.tcl'
+start_gui
+open_project project_2.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory '/home/zach/git/Documents/vivado-boards-master/new/board_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 6382.762 ; gain = 144.988 ; free physical = 14680 ; free virtual = 47965
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 12
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'proc_system_microblaze_0_axi_periph_0' found in library 'xil_defaultlib'
+ERROR: [Common 17-70] Application Exception: Unable to parse '/home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/.Xil/Vivado-16399-zmsilx-localhost/dcp3/dcp.xml'. This can indicate that the checkpoint file is corrupt, or that there is insufficient free disk space to expand it.

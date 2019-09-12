@@ -1,4 +1,2 @@
-activeuserprofiles=Team;ZPCX;zmsilx-localhost
 eclipse.preferences.version=1
-org.eclipse.rse.systemtype.local.systemType.defaultUserId=Zach
-useridperkey=ZPCX.Local\=Zach;
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=root

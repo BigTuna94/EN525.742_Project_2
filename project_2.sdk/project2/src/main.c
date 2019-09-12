@@ -56,7 +56,7 @@
 int main()
 {
     init_platform();
-    xil_printf("\n\n=================== Zach Richard - MicroBlaze Started! ===================\n\n");
+    xil_printf("\r\n\r\n=================== Zach Richard - MicroBlaze Started! ===================\r\n\r\n");
 
     xil_printf("Initializing codec...");
     init_codec();
@@ -72,12 +72,17 @@ int main()
 		 4798,  // sin(5pi/4)
 		    0,  // sin(6pi/4)
 		 4798,  // sin(7pi/4)
-		 16383, // sin(8pi/4)
+		16383,  // sin(8pi/4)
     };
 
+    uint32_t num_sin = 0;
     while(1) {
     	for (int i = 0; i < NUM_SIN_STEPS; i++) {
     		push_to_fifo(sin_0_to_2pi_scaled[i]);
+    	}
+    	if (++num_sin >= 0xFFF) {
+    		xil_printf("Pushed %lu sin wave iterations!\r\n", num_sin);
+    		num_sin = 0;
     	}
     }
 
