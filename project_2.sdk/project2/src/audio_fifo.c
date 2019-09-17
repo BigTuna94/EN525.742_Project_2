@@ -12,7 +12,7 @@
 #include "audio_fifo.h"
 
 
-void push_to_fifo(uint16_t data) {
+void push_to_fifo(uint32_t data) {
 	putfslx(data, FSL_ID, FSL_DEFAULT);
 
 	// XGpio_WriteReg(BaseAddress, RegOffset, Data);

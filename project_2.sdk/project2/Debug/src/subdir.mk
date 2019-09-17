@@ -10,19 +10,22 @@ C_SRCS += \
 ../src/audio_fifo.c \
 ../src/codec.c \
 ../src/main.c \
-../src/platform.c 
+../src/platform.c \
+../src/serial_audio_lib.c 
 
 OBJS += \
 ./src/audio_fifo.o \
 ./src/codec.o \
 ./src/main.o \
-./src/platform.o 
+./src/platform.o \
+./src/serial_audio_lib.o 
 
 C_DEPS += \
 ./src/audio_fifo.d \
 ./src/codec.d \
 ./src/main.d \
-./src/platform.d 
+./src/platform.d \
+./src/serial_audio_lib.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

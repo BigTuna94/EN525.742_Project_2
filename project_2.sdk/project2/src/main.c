@@ -47,10 +47,22 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
+#include "xil_assert.h"
+
 #include "codec.h"
 #include "audio_fifo.h"
+#include "serial_audio_lib.h"
 
-#define NUM_SIN_STEPS 9
+void print_welcome(void) {
+	xil_printf("===============================================================\r\n");
+	xil_printf("=== Audio Playback System ==================== by  Zach Richard\r\n");
+	xil_printf("===============================================================\r\n");
+}
+
+
+void assertion_handler(char *Filename, int Line) {
+	xil_printf("\r\n!ERROR! Assertion in File: %s on line: %d\t\n", Filename, Line);
+}
 
 
 int main()
@@ -58,34 +70,41 @@ int main()
     init_platform();
     xil_printf("\r\n\r\n=================== Zach Richard - MicroBlaze Started! ===================\r\n\r\n");
 
-    xil_printf("Initializing codec...");
-    init_codec();
-    xil_printf("done.\n");
+    xil_printf("\r\nSetting up Assertion Handler...");
+    Xil_AssertSetCallback((Xil_AssertCallback)&assertion_handler);
+    xil_printf("Done.\r\n");
 
-    // sin(i*pi/4) * 16383 + 16383
-    uint16_t sin_0_to_2pi_scaled[NUM_SIN_STEPS] = {
-    	16383, 	// sin(0pi/4)
-		27968, 	// sin(1pi/4
-		32766, 	// sin(2pi/4)
-		27968, 	// sin(3pi/4)
-		16383, 	// sin(4pi/4)
-		 4798,  // sin(5pi/4)
-		    0,  // sin(6pi/4)
-		 4798,  // sin(7pi/4)
-		16383,  // sin(8pi/4)
-    };
+//	xil_printf("Initializing codec...");
+//	init_codec();
+//	xil_printf("done.\r\n");
 
-    uint32_t num_sin = 0;
-    while(1) {
-    	for (int i = 0; i < NUM_SIN_STEPS; i++) {
-    		push_to_fifo(sin_0_to_2pi_scaled[i]);
-    	}
-    	if (++num_sin >= 0xFFF) {
-    		xil_printf("Pushed %lu sin wave iterations!\r\n", num_sin);
-    		num_sin = 0;
-    	}
+    // sin_audio_test();
+
+    // Setup STDIN without buffering
+    setvbuf(stdin, NULL, _IONBF, 0);
+
+    print_welcome();
+
+    while (1) {
+		print_main_menu();
+		switch (get_option()) {
+			case LOAD:
+				load_new_file();
+				break;
+			case PLAY_ONCE:
+				play_loaded_file();
+				break;
+			case PLAY_CONTINUOUS:
+				play_loaded_file_loop();
+				break;
+			case UNKNOWN:
+			default:
+				xil_printf("Error: UNKNOWN option entered!\r\n");
+		}
     }
 
     cleanup_platform();
     return 0;
 }
+
+

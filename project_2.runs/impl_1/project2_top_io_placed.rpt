@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
--------------------------------------------------------------------------------------------------
-| Tool Version              : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date                      : Wed Sep 11 18:39:52 2019
-| Host                      : zmsilx-localhost running 64-bit Fedora release 30 (Thirty)
+---------------------------------------------------------------------------------------------------
+| Tool Version              : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
+| Date                      : Mon Sep 16 21:05:35 2019
+| Host                      : ZPCX running 64-bit major release  (build 9200)
 | Command                   : report_io -file project2_top_io_placed.rpt
 | Design                    : project2_top
 | Device                    : xc7z020
@@ -10,7 +10,7 @@ Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 | Package                   : clg484
 | Package Version           : FINAL 2012-06-26
 | Package Pin Delay Version : VERS. 2.0 2012-06-26
--------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 IO Information
 

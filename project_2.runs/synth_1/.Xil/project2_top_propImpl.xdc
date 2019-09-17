@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:/home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/constrs_1/imports/new/project1_zedboard.xdc rfile:../../../project_2.srcs/constrs_1/imports/new/project1_zedboard.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:/home/zach/git/grad_school/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/constrs_1/imports/Downloads/zedboard_master_XDC_RevC_D_v3.xdc rfile:../../../project_2.srcs/constrs_1/imports/Downloads/zedboard_master_XDC_RevC_D_v3.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/constrs_1/imports/new/project1_zedboard.xdc rfile:../../../project_2.srcs/constrs_1/imports/new/project1_zedboard.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/constrs_1/imports/Downloads/zedboard_master_XDC_RevC_D_v3.xdc rfile:../../../project_2.srcs/constrs_1/imports/Downloads/zedboard_master_XDC_RevC_D_v3.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports clk_in]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
