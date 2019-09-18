@@ -102,6 +102,7 @@ int main()
 			default:
 				xil_printf("Error: UNKNOWN option entered!\r\n");
 		}
+		xil_printf("Returning to main menu.\r\n");
     }
 
     cleanup_platform();

@@ -100,35 +100,41 @@ void load_new_file(void) {
 
 	// Validate new File Size
 	if (new_audio_file_samples > MAX_AUDIO_FILE_SAMPLES) {
-		xil_printf("Error! File size received [0xlx] is larger than maximum file size! [0xlx]", new_audio_file_samples, MAX_AUDIO_FILE_SAMPLES);
-	}
-
-	// Free old audio data
-	empty_loaded_audio();
-	audio_file_samples = 0;
-
-	// Read in new data
-	uint32_t sample;
-	for (sample = 0; sample < new_audio_file_samples; sample++) {
-		// cheap way to wipe buffer
-		byte_buff[0] = byte_buff[1] = byte_buff[2] = byte_buff[3] = 0;
-		// get the next 4 bytes
-		for (int sub_sample_byte = 0; sub_sample_byte < 4; sub_sample_byte++) {
-			byte_buff[sub_sample_byte] = inbyte();
+		xil_printf("Error! File size received [0x%lx] is larger than maximum file size! [0x%lx]", new_audio_file_samples, MAX_AUDIO_FILE_SAMPLES);
+		// Dump received data --- kind of works, but doesn't get all the data
+		while (!XUartLite_IsReceiveEmpty(XPAR_AXI_UARTLITE_BASEADDR)) {
+			volatile char trash = (char)XUartLite_ReadReg(XPAR_AXI_UARTLITE_BASEADDR, XUL_RX_FIFO_OFFSET);
+			(void)trash; // stop compiler warning
 		}
-		loaded_audio_file[sample] = bytes4_to_32bits(byte_buff);
-		// xil_printf("Sample: 0x%lx data: 0x%08lx\r\n", sample, loaded_audio_file[sample]);
+	} else { // Load Audio Data
+
+		// Free old audio data
+		empty_loaded_audio();
+		audio_file_samples = 0;
+
+		// Read in new data
+		uint32_t sample;
+		for (sample = 0; sample < new_audio_file_samples; sample++) {
+			// cheap way to wipe buffer
+			byte_buff[0] = byte_buff[1] = byte_buff[2] = byte_buff[3] = 0;
+			// get the next 4 bytes
+			for (int sub_sample_byte = 0; sub_sample_byte < 4; sub_sample_byte++) {
+				byte_buff[sub_sample_byte] = inbyte();
+			}
+			loaded_audio_file[sample] = bytes4_to_32bits(byte_buff);
+			// xil_printf("Sample: 0x%lx data: 0x%08lx\r\n", sample, loaded_audio_file[sample]);
+		}
+
+		// Debug File Loading...
+		//	xil_printf("[load_new_file] New audio file size: 0x%lx\r\n", new_audio_file_samples);
+		//	xil_printf("[load_new_file] Received data:\r\n");
+		//	for (uint32_t i=0; i < new_audio_file_samples; i++) {
+		//		xil_printf("\tSample: 0x%08lx \tData: 0x%08lx\r\n", i, loaded_audio_file[i]);
+		//	}
+
+		audio_file_samples = new_audio_file_samples;
+		xil_printf("[load_new_file] Completed loading new Audio file![size: %lu (0x%lx)]\r\n", audio_file_samples, audio_file_samples);
 	}
-	xil_printf("[load_new_file] Completed loading new Audio file!\r\nReturning to main menu.\r\n");
-
-
-	// Debug File Loading...
-//	xil_printf("[load_new_file] New audio file size: 0x%lx\r\n", new_audio_file_samples);
-//	xil_printf("[load_new_file] Received data:\r\n");
-//	for (uint32_t i=0; i < new_audio_file_samples; i++) {
-//		xil_printf("\tSample: 0x%08lx \tData: 0x%08lx\r\n", i, loaded_audio_file[i]);
-//	}
-	audio_file_samples = new_audio_file_samples;
 }
 
 static void dump_audio_to_fifo(void) {
@@ -140,7 +146,7 @@ static void dump_audio_to_fifo(void) {
 void play_loaded_file(void) {
 	xil_printf("Starting Single Playback...\r\n");
 	dump_audio_to_fifo();
-	xil_printf("Singel Playback loading complete.\r\n");
+	xil_printf("Single Playback loading complete.\r\n");
 }
 
 void play_loaded_file_loop(void) {

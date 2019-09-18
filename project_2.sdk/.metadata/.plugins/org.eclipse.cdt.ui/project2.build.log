@@ -1,6 +1,6 @@
-20:01:17 **** Incremental Build of configuration Release for project project2 ****
+20:36:06 **** Incremental Build of configuration Release for project project2 ****
 make all 
 make: Nothing to be done for `all'.
 
-20:01:17 Build Finished (took 139ms)
+20:36:06 Build Finished (took 135ms)
 
