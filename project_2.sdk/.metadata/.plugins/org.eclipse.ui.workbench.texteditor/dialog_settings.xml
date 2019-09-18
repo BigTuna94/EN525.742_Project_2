@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="UART" key="selection"/>
+		<item value="XSpi_SetSlaveSelectReg" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="uart"/>
-			<item value="SPI"/>
-			<item value="SLAVE"/>
+			<item value="XSpi_SetSlaveSelectReg"/>
 			<item value="slave"/>
-			<item value="SetSlaveSelect"/>
-			<item value="\n&quot;"/>
-			<item value="\n"/>
-			<item value="XSpi_Transfer"/>
+			<item value="_SS_"/>
+			<item value="XPAR_SPI_0_NUM_SS_BITS"/>
+			<item value="SPI"/>
+			<item value="SS"/>
+			<item value="lat"/>
+			<item value="spi_rtl_ss_io_0"/>
 		</list>
 		<list key="replacehistory">
 			<item value="\n\r&quot;"/>
@@ -25,7 +25,7 @@
 		<item value="284" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="391" key="DIALOG_HEIGHT"/>
-		<item value="1147" key="DIALOG_X_ORIGIN"/>
-		<item value="258" key="DIALOG_Y_ORIGIN"/>
+		<item value="458" key="DIALOG_X_ORIGIN"/>
+		<item value="250" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

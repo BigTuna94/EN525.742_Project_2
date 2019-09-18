@@ -130,7 +130,7 @@ begin
     ll_dac_gen: entity lowlevel_dac_intfc port map (
         rst => reset,
         clk100 => clk,
-        data_word => audio_out_word_sin_test,
+        data_word => audio_out_word,-- audio_out_word_sin_test,
         sdata => AC_GPIO0,
         lrck => AC_GPIO3,
         bclk => AC_GPIO2,

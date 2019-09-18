@@ -74,13 +74,14 @@ int main()
     Xil_AssertSetCallback((Xil_AssertCallback)&assertion_handler);
     xil_printf("Done.\r\n");
 
-//	xil_printf("Initializing codec...");
-//	init_codec();
-//	xil_printf("done.\r\n");
+	xil_printf("Initializing codec...");
+	init_codec();
+	xil_printf("done.\r\n");
 
-    // sin_audio_test();
+    sin_audio_test();
 
     // Setup STDIN without buffering
+    // allows user to send commands without pressing enter
     setvbuf(stdin, NULL, _IONBF, 0);
 
     print_welcome();

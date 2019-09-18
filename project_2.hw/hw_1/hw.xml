@@ -9,7 +9,7 @@
     <Object name="xc7z020_1" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/project2_top.ltx"/>
       <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/project2_top.ltx"/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="C:/Users/Zach/Downloads/lab2_inst_example.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/project2_top.bit"/>
       <Properties Property="SLR.COUNT" value="C:/Users/Zach/AppData/Roaming/Xilinx/Vivado/1"/>
     </Object>
   </ObjectList>
@@ -19,13 +19,16 @@
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
     <Object name="ila_inst" gui_info="">
+      <Properties Property="CONTROL.CAPTURE_CONDITION" value="OR"/>
       <Properties Property="CONTROL.CAPTURE_MODE" value="BASIC"/>
       <Properties Property="CONTROL.TRIGGER_CONDITION" value="OR"/>
       <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
-    <Object name="adc_ready" gui_info="Trigger Setup=0,Capture Setup=0"/>
+    <Object name="adc_ready" gui_info=""/>
+    <Object name="ila_probe2[15:0]" gui_info="Capture Setup=1"/>
+    <Object name="ila_probe3[15:0]" gui_info="Capture Setup=0"/>
     <Object name="spi_rtl_io0_o" gui_info=""/>
     <Object name="spi_rtl_io1_o" gui_info=""/>
     <Object name="spi_rtl_sck_o" gui_info=""/>

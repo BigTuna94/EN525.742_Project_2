@@ -6,7 +6,6 @@
  */
 #include <stdint.h>
 #include "xparameters.h"
-//#include "xspi_l.h"
 #include "xspi.h"
 #include "xstatus.h"
 #include "malloc.h"
@@ -19,32 +18,22 @@ static XSpi *Spi; /* The instance of the SPI device */
 /*
  * Reference: https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1761.pdf
  */
-static void write_reg(uint32_t reg, uint32_t val) {
+static void write_reg(uint32_t reg, uint8_t val) {
 	uint8_t chip_addr = 0;
-	uint8_t addr_high, addr_low, data_high, data_low;
+	uint8_t addr_high, addr_low;
 
 	addr_high = (reg & 0xFF00) >> 8;
 	addr_low = (reg & 0x00FF);
-	data_high = (val & 0xFF00) >> 8;
-	data_low = (val & 0x00FF);
 
-	//uint8_t send_buffer[] = {chip_addr, addr_high, addr_low, data_high, data_low};
-	uint8_t send_buffer[] = {data_low, data_high, addr_low, addr_high, chip_addr};
-	uint8_t receive_buffer[] = {0, 0, 0, 0, 0};
+	// Parse data into byte array
+	uint8_t send_buffer[] = {chip_addr, addr_high, addr_low, val};
+	uint8_t receive_buffer[] = {0, 0, 0, 0};
 
+	// Send Data
 	int transfer_status = XSpi_Transfer(Spi, send_buffer, receive_buffer, sizeof(send_buffer));
 	if (transfer_status != XST_SUCCESS) {
 		xil_printf("[codec.c::write_reg] ERROR! Spi Transfer failed with status: %d\r\n", transfer_status);
 	}
-
-	xil_printf("[codec.c::write_reg] SPI Received bytes: \r\n");
-	for (int i = 0; i < sizeof(receive_buffer); i++) {
-		xil_printf("\tbuff[%d]: 0x%02x\r\n", i, receive_buffer[i]);
-	}
-	xil_printf("\n");
-
-	uint32_t StatusReg = XSpi_GetStatusReg(Spi);
-	xil_printf("[codec.c::write_reg] SPI Status after writing: 0x%lx\r\n", StatusReg);
 }
 
 
@@ -89,7 +78,7 @@ static int init_spi(void) {
 	/*
 	 * Set Slave Select mode
 	 */
-	Status = XSpi_SetSlaveSelect(Spi, 0x01);
+	Status = XSpi_SetSlaveSelect(Spi, 1);
 	if (Status != XST_SUCCESS) {
 		switch (Status) {
 			case XST_DEVICE_BUSY:
@@ -104,13 +93,9 @@ static int init_spi(void) {
 		return Status;
 	}
 
-	// Status = XSpi_SetOptions(Spi, XSP_MASTER_OPTION);
-	// Status = XSpi_SetOptions(Spi, XSP_MASTER_OPTION | XSP_MANUAL_SSELECT_OPTION);
-	// Status = XSpi_SetOptions(Spi, XSP_MANUAL_SSELECT_OPTION);
-	// Status = XSpi_SetOptions(Spi,
-	//		XSP_MASTER_OPTION | XSP_CLK_PHASE_1_OPTION | XSP_CLK_ACTIVE_LOW_OPTION);
-	Status = XSpi_SetOptions(Spi, XSP_MASTER_OPTION);
-	//Status = XSpi_SetOptions(Spi, XSP_MASTER_OPTION | XSP_MANUAL_SSELECT_OPTION);
+
+	//Status = XSpi_SetOptions(Spi, XSP_MASTER_OPTION);
+	Status = XSpi_SetOptions(Spi, XSP_MASTER_OPTION | XSP_MANUAL_SSELECT_OPTION);
 	if (Status != XST_SUCCESS) {
 		xil_printf("[codec.c::init_spi] SetOptions failed!\r\n");
 		return XST_FAILURE;

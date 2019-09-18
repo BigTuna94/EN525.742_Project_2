@@ -2,8 +2,8 @@
 # Vivado v2017.4.1 (64-bit)
 # SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
 # IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
-# Start of session at: Mon Sep 16 21:03:05 2019
-# Process ID: 1108
+# Start of session at: Tue Sep 17 19:23:21 2019
+# Process ID: 3632
 # Current directory: C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1
 # Command line: vivado.exe -log project2_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project2_top.tcl
 # Log file: C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/project2_top.vds
@@ -13,15 +13,15 @@ source project2_top.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
-add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 353.066 ; gain = 55.684
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 351.879 ; gain = 54.637
 Command: synth_design -top project2_top -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9652 
+INFO: Helper process launched with PID 1240 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 483.414 ; gain = 97.723
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 483.391 ; gain = 99.316
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'project2_top' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:45]
 INFO: [Synth 8-638] synthesizing module 'lowlevel_dac_intfc' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/imports/project_1_part_2.srcs/sources_1/imports/p1p2_src/lowlevel_dac_intfc.vhd:35]
@@ -30,18 +30,18 @@ WARNING: [Synth 8-614] signal 'uninitialized' is read in the process but is not 
 WARNING: [Synth 8-614] signal 'adc_ready' is read in the process but is not in the sensitivity list [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:141]
 INFO: [Synth 8-3491] module 'proc_system' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:1599' bound to instance 'proc_system_gen' of component 'proc_system' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:153]
 INFO: [Synth 8-638] synthesizing module 'proc_system' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:1630]
-INFO: [Synth 8-3491] module 'proc_system_axi_gpio_0_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'proc_system_axi_gpio_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2019]
-INFO: [Synth 8-638] synthesizing module 'proc_system_axi_gpio_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_axi_gpio_0_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'proc_system_axi_quad_spi_0_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_axi_quad_spi_0_0_stub.vhdl:5' bound to instance 'axi_quad_spi_0' of component 'proc_system_axi_quad_spi_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2042]
-INFO: [Synth 8-638] synthesizing module 'proc_system_axi_quad_spi_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_axi_quad_spi_0_0_stub.vhdl:44]
-INFO: [Synth 8-3491] module 'proc_system_axi_uartlite_0_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite' of component 'proc_system_axi_uartlite_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2078]
-INFO: [Synth 8-638] synthesizing module 'proc_system_axi_uartlite_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_axi_uartlite_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'proc_system_axis_data_fifo_0_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_axis_data_fifo_0_0_stub.vhdl:5' bound to instance 'axis_data_fifo' of component 'proc_system_axis_data_fifo_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2103]
-INFO: [Synth 8-638] synthesizing module 'proc_system_axis_data_fifo_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_axis_data_fifo_0_0_stub.vhdl:24]
-INFO: [Synth 8-3491] module 'proc_system_mdm_1_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'proc_system_mdm_1_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2119]
-INFO: [Synth 8-638] synthesizing module 'proc_system_mdm_1_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_mdm_1_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'proc_system_microblaze_0_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'proc_system_microblaze_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2132]
-INFO: [Synth 8-638] synthesizing module 'proc_system_microblaze_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_microblaze_0_0_stub.vhdl:71]
+INFO: [Synth 8-3491] module 'proc_system_axi_gpio_0_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'proc_system_axi_gpio_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2019]
+INFO: [Synth 8-638] synthesizing module 'proc_system_axi_gpio_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'proc_system_axi_quad_spi_0_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_axi_quad_spi_0_0_stub.vhdl:5' bound to instance 'axi_quad_spi_0' of component 'proc_system_axi_quad_spi_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2042]
+INFO: [Synth 8-638] synthesizing module 'proc_system_axi_quad_spi_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_axi_quad_spi_0_0_stub.vhdl:44]
+INFO: [Synth 8-3491] module 'proc_system_axi_uartlite_0_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite' of component 'proc_system_axi_uartlite_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2078]
+INFO: [Synth 8-638] synthesizing module 'proc_system_axi_uartlite_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'proc_system_axis_data_fifo_0_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_axis_data_fifo_0_0_stub.vhdl:5' bound to instance 'axis_data_fifo' of component 'proc_system_axis_data_fifo_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2103]
+INFO: [Synth 8-638] synthesizing module 'proc_system_axis_data_fifo_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_axis_data_fifo_0_0_stub.vhdl:24]
+INFO: [Synth 8-3491] module 'proc_system_mdm_1_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'proc_system_mdm_1_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2119]
+INFO: [Synth 8-638] synthesizing module 'proc_system_mdm_1_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'proc_system_microblaze_0_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'proc_system_microblaze_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2132]
+INFO: [Synth 8-638] synthesizing module 'proc_system_microblaze_0_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_microblaze_0_0_stub.vhdl:71]
 INFO: [Synth 8-638] synthesizing module 'proc_system_microblaze_0_axi_periph_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:1071]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1G4H004' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1G4H004' (2#1) [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:57]
@@ -51,23 +51,23 @@ INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_QE6A7T' [C:/Users/Zach
 INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_QE6A7T' (4#1) [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:259]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_ODJDQS' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:922]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_ODJDQS' (5#1) [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:922]
-INFO: [Synth 8-3491] module 'proc_system_xbar_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'proc_system_xbar_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:1517]
-INFO: [Synth 8-638] synthesizing module 'proc_system_xbar_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'proc_system_xbar_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'proc_system_xbar_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:1517]
+INFO: [Synth 8-638] synthesizing module 'proc_system_xbar_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_xbar_0_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'proc_system_microblaze_0_axi_periph_0' (6#1) [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:1071]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_PBAZYT' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:343]
-INFO: [Synth 8-3491] module 'proc_system_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'proc_system_dlmb_bram_if_cntlr_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:557]
-INFO: [Synth 8-638] synthesizing module 'proc_system_dlmb_bram_if_cntlr_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_dlmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'proc_system_dlmb_v10_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'proc_system_dlmb_v10_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:611]
-INFO: [Synth 8-638] synthesizing module 'proc_system_dlmb_v10_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_dlmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'proc_system_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'proc_system_ilmb_bram_if_cntlr_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:639]
-INFO: [Synth 8-638] synthesizing module 'proc_system_ilmb_bram_if_cntlr_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_ilmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'proc_system_ilmb_v10_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'proc_system_ilmb_v10_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:693]
-INFO: [Synth 8-638] synthesizing module 'proc_system_ilmb_v10_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_ilmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'proc_system_lmb_bram_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'proc_system_lmb_bram_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:721]
-INFO: [Synth 8-638] synthesizing module 'proc_system_lmb_bram_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'proc_system_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'proc_system_dlmb_bram_if_cntlr_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:557]
+INFO: [Synth 8-638] synthesizing module 'proc_system_dlmb_bram_if_cntlr_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'proc_system_dlmb_v10_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'proc_system_dlmb_v10_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:611]
+INFO: [Synth 8-638] synthesizing module 'proc_system_dlmb_v10_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'proc_system_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'proc_system_ilmb_bram_if_cntlr_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:639]
+INFO: [Synth 8-638] synthesizing module 'proc_system_ilmb_bram_if_cntlr_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'proc_system_ilmb_v10_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'proc_system_ilmb_v10_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:693]
+INFO: [Synth 8-638] synthesizing module 'proc_system_ilmb_v10_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'proc_system_lmb_bram_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'proc_system_lmb_bram_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:721]
+INFO: [Synth 8-638] synthesizing module 'proc_system_lmb_bram_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_lmb_bram_0_stub.vhdl:27]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_PBAZYT' (7#1) [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:343]
-INFO: [Synth 8-3491] module 'proc_system_rst_Clk_100M_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_rst_Clk_100M_0_stub.vhdl:5' bound to instance 'rst_Clk_100M' of component 'proc_system_rst_Clk_100M_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2302]
-INFO: [Synth 8-638] synthesizing module 'proc_system_rst_Clk_100M_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/proc_system_rst_Clk_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'proc_system_rst_Clk_100M_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_rst_Clk_100M_0_stub.vhdl:5' bound to instance 'rst_Clk_100M' of component 'proc_system_rst_Clk_100M_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:2302]
+INFO: [Synth 8-638] synthesizing module 'proc_system_rst_Clk_100M_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/proc_system_rst_Clk_100M_0_stub.vhdl:21]
 INFO: [Synth 8-256] done synthesizing module 'proc_system' (8#1) [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/bd/proc_system/synth/proc_system.vhd:1630]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'spi_rtl_io0_iobuf' of component 'IOBUF' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:176]
 INFO: [Synth 8-638] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655]
@@ -79,8 +79,8 @@ INFO: [Synth 8-256] done synthesizing module 'IOBUF' (9#1) [C:/Xilinx/Vivado/201
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'spi_rtl_io1_iobuf' of component 'IOBUF' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:183]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'spi_rtl_sck_iobuf' of component 'IOBUF' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:190]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655' bound to instance 'spi_rtl_ss_iobuf_0' of component 'IOBUF' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:197]
-INFO: [Synth 8-3491] module 'ila_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/ila_0_stub.vhdl:5' bound to instance 'ila_inst' of component 'ila_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:255]
-INFO: [Synth 8-638] synthesizing module 'ila_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/realtime/ila_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'ila_0' declared at 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/ila_0_stub.vhdl:5' bound to instance 'ila_inst' of component 'ila_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/realtime/ila_0_stub.vhdl:16]
 WARNING: [Synth 8-3848] Net audio_out_word_sin_test in module/entity project2_top does not have driver. [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:114]
 INFO: [Synth 8-256] done synthesizing module 'project2_top' (10#1) [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:45]
 WARNING: [Synth 8-3331] design s00_couplers_imp_ODJDQS has unconnected port M_ACLK
@@ -100,7 +100,7 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_1G4H004 has unconnected port M_A
 WARNING: [Synth 8-3331] design m00_couplers_imp_1G4H004 has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_1G4H004 has unconnected port S_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 536.887 ; gain = 151.195
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 536.504 ; gain = 152.430
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -109,40 +109,8 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[31] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[30] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[29] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[28] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[27] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[26] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[25] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[24] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[23] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[22] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[21] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[20] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[19] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[18] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[17] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[16] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[15] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[14] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[13] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[12] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[11] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[10] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[9] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[8] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[7] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[6] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[5] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[4] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[3] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[2] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[1] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
-WARNING: [Synth 8-3295] tying undriven pin ll_dac_gen:data_word[0] to constant 0 [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/new/project2_top.vhd:130]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 536.887 ; gain = 151.195
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 536.504 ; gain = 152.430
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -151,34 +119,34 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp14/proc_system_microblaze_0_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp14/proc_system_microblaze_0_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp15/proc_system_mdm_1_0_in_context.xdc] for cell 'proc_system_gen/mdm_1'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp15/proc_system_mdm_1_0_in_context.xdc] for cell 'proc_system_gen/mdm_1'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp16/proc_system_rst_Clk_100M_0_in_context.xdc] for cell 'proc_system_gen/rst_Clk_100M'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp16/proc_system_rst_Clk_100M_0_in_context.xdc] for cell 'proc_system_gen/rst_Clk_100M'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp17/proc_system_ilmb_v10_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp17/proc_system_ilmb_v10_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp18/proc_system_ilmb_v10_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp18/proc_system_ilmb_v10_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp19/proc_system_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp19/proc_system_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp20/proc_system_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp20/proc_system_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp21/proc_system_lmb_bram_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp21/proc_system_lmb_bram_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp22/proc_system_axi_uartlite_0_0_in_context.xdc] for cell 'proc_system_gen/axi_uartlite'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp22/proc_system_axi_uartlite_0_0_in_context.xdc] for cell 'proc_system_gen/axi_uartlite'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp23/proc_system_axis_data_fifo_0_0_in_context.xdc] for cell 'proc_system_gen/axis_data_fifo'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp23/proc_system_axis_data_fifo_0_0_in_context.xdc] for cell 'proc_system_gen/axis_data_fifo'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp24/proc_system_axi_quad_spi_0_0_in_context.xdc] for cell 'proc_system_gen/axi_quad_spi_0'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp24/proc_system_axi_quad_spi_0_0_in_context.xdc] for cell 'proc_system_gen/axi_quad_spi_0'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp25/proc_system_xbar_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp25/proc_system_xbar_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_axi_periph/xbar'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp26/proc_system_axi_gpio_0_0_in_context.xdc] for cell 'proc_system_gen/axi_gpio_0'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp26/proc_system_axi_gpio_0_0_in_context.xdc] for cell 'proc_system_gen/axi_gpio_0'
-Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp27/ila_0_in_context.xdc] for cell 'ila_inst'
-Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-1108-ZPCX/dcp27/ila_0_in_context.xdc] for cell 'ila_inst'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp14/proc_system_microblaze_0_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp14/proc_system_microblaze_0_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp15/proc_system_mdm_1_0_in_context.xdc] for cell 'proc_system_gen/mdm_1'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp15/proc_system_mdm_1_0_in_context.xdc] for cell 'proc_system_gen/mdm_1'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp16/proc_system_rst_Clk_100M_0_in_context.xdc] for cell 'proc_system_gen/rst_Clk_100M'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp16/proc_system_rst_Clk_100M_0_in_context.xdc] for cell 'proc_system_gen/rst_Clk_100M'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp17/proc_system_ilmb_v10_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp17/proc_system_ilmb_v10_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp18/proc_system_ilmb_v10_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp18/proc_system_ilmb_v10_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp19/proc_system_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp19/proc_system_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp20/proc_system_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp20/proc_system_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp21/proc_system_lmb_bram_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp21/proc_system_lmb_bram_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp22/proc_system_axi_uartlite_0_0_in_context.xdc] for cell 'proc_system_gen/axi_uartlite'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp22/proc_system_axi_uartlite_0_0_in_context.xdc] for cell 'proc_system_gen/axi_uartlite'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp23/proc_system_axis_data_fifo_0_0_in_context.xdc] for cell 'proc_system_gen/axis_data_fifo'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp23/proc_system_axis_data_fifo_0_0_in_context.xdc] for cell 'proc_system_gen/axis_data_fifo'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp24/proc_system_axi_quad_spi_0_0_in_context.xdc] for cell 'proc_system_gen/axi_quad_spi_0'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp24/proc_system_axi_quad_spi_0_0_in_context.xdc] for cell 'proc_system_gen/axi_quad_spi_0'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp25/proc_system_xbar_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp25/proc_system_xbar_0_in_context.xdc] for cell 'proc_system_gen/microblaze_0_axi_periph/xbar'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp26/proc_system_axi_gpio_0_0_in_context.xdc] for cell 'proc_system_gen/axi_gpio_0'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp26/proc_system_axi_gpio_0_0_in_context.xdc] for cell 'proc_system_gen/axi_gpio_0'
+Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp27/ila_0_in_context.xdc] for cell 'ila_inst'
+Finished Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/.Xil/Vivado-3632-ZPCX/dcp27/ila_0_in_context.xdc] for cell 'ila_inst'
 Parsing XDC File [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/constrs_1/imports/new/project1_zedboard.xdc]
 WARNING: [Vivado 12-584] No ports matched 'clk_in'. [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/constrs_1/imports/new/project1_zedboard.xdc:1]
 WARNING: [Vivado 12-584] No ports matched 'clk_in'. [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/constrs_1/imports/new/project1_zedboard.xdc:2]
@@ -298,19 +266,19 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 890.719 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 890.148 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'proc_system_gen/axi_quad_spi_0' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'proc_system_gen/axis_data_fifo' at clock pin 's_axis_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'proc_system_gen/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 890.719 ; gain = 505.027
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 890.148 ; gain = 506.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 890.719 ; gain = 505.027
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 890.148 ; gain = 506.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -332,14 +300,14 @@ Applied set_property DONT_TOUCH = true for proc_system_gen/microblaze_0_local_me
 Applied set_property DONT_TOUCH = true for proc_system_gen/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for proc_system_gen/rst_Clk_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 890.719 ; gain = 505.027
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 890.148 ; gain = 506.074
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "latched_data_sig" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5544] ROM "mclk_sig" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "bclk_sig" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element data_bit_index_reg was removed.  [C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.srcs/sources_1/imports/project_1_part_2.srcs/sources_1/imports/p1p2_src/lowlevel_dac_intfc.vhd:64]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 890.719 ; gain = 505.027
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 890.148 ; gain = 506.074
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -416,7 +384,7 @@ WARNING: [Synth 8-3331] design proc_system_microblaze_0_axi_periph_0 has unconne
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (uninitialized_reg)
 WARNING: [Synth 8-3332] Sequential element (uninitialized_reg) is unused and will be removed from module project2_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 890.719 ; gain = 505.027
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 890.148 ; gain = 506.074
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -433,13 +401,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'proc_system_gen/microblaz
 INFO: [Synth 8-5578] Moved timing constraint from pin 'proc_system_gen/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'proc_system_gen/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
 INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 890.719 ; gain = 505.027
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 890.555 ; gain = 506.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 906.637 ; gain = 520.945
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 911.863 ; gain = 527.789
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -451,7 +419,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 907.656 ; gain = 521.965
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 912.633 ; gain = 528.559
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -474,8 +442,40 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe2_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin ila_probe3_inferred:in0[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 907.656 ; gain = 521.965
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 912.633 ; gain = 528.559
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -488,7 +488,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 907.656 ; gain = 521.965
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 912.633 ; gain = 528.559
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -500,25 +500,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 907.656 ; gain = 521.965
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 912.633 ; gain = 528.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 907.656 ; gain = 521.965
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 912.633 ; gain = 528.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 907.656 ; gain = 521.965
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 912.633 ; gain = 528.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 907.656 ; gain = 521.965
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 912.633 ; gain = 528.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -565,37 +565,38 @@ Report Cell Usage:
 |15    |BUFG                                    |     1|
 |16    |CARRY4                                  |    19|
 |17    |LUT1                                    |    34|
-|18    |LUT2                                    |   119|
+|18    |LUT2                                    |   120|
 |19    |LUT3                                    |    13|
 |20    |LUT4                                    |     7|
 |21    |LUT5                                    |     6|
-|22    |LUT6                                    |     4|
-|23    |FDCE                                    |    30|
-|24    |FDPE                                    |     5|
-|25    |FDRE                                    |     9|
-|26    |IBUF                                    |     3|
-|27    |IOBUF                                   |     4|
-|28    |OBUF                                    |    13|
+|22    |LUT6                                    |    13|
+|23    |MUXF7                                   |     4|
+|24    |FDCE                                    |    30|
+|25    |FDPE                                    |     5|
+|26    |FDRE                                    |     9|
+|27    |IBUF                                    |     3|
+|28    |IOBUF                                   |     4|
+|29    |OBUF                                    |    13|
 +------+----------------------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+--------------------------------------+------+
 |      |Instance                      |Module                                |Cells |
 +------+------------------------------+--------------------------------------+------+
-|1     |top                           |                                      |  1685|
+|1     |top                           |                                      |  1699|
 |2     |  proc_system_gen             |proc_system                           |  1418|
 |3     |    microblaze_0_axi_periph   |proc_system_microblaze_0_axi_periph_0 |   374|
 |4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_PBAZYT  |   496|
-|5     |  ll_dac_gen                  |lowlevel_dac_intfc                    |   214|
+|5     |  ll_dac_gen                  |lowlevel_dac_intfc                    |   228|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 907.656 ; gain = 521.965
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 912.633 ; gain = 528.559
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 907.656 ; gain = 168.133
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 907.656 ; gain = 521.965
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 912.633 ; gain = 174.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 912.633 ; gain = 528.559
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -606,10 +607,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 82 Infos, 168 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 912.574 ; gain = 528.613
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 914.117 ; gain = 531.777
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.collectionResultDisplayLimit
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Zach/Documents/GradSchool/Fall_2019/EN525.742_SOC_Design_Lab/EN525.742_Project_2/project_2.runs/synth_1/project2_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file project2_top_utilization_synth.rpt -pb project2_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 912.574 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 16 21:03:54 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 914.117 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 17 19:24:10 2019...

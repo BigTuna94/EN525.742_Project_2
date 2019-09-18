@@ -30,15 +30,10 @@ void sin_audio_test(void) {
 		16383   // sin(8pi/4)
     };
 
-    uint32_t num_sin = 0;
-    while(1) {
+    for(uint32_t repeats = 0; repeats < 2048; repeats++) {
     	for (int i = 0; i < NUM_SIN_STEPS; i++) {
     		uint32_t new_data = (sin_0_to_2pi_scaled[i] << 16) | sin_0_to_2pi_scaled[i];
     		push_to_fifo( new_data );
-    	}
-    	if (++num_sin >= 0xFFF) {
-    		xil_printf("Pushed %lu sin wave iterations!\r\n", num_sin);
-    		num_sin = 0;
     	}
     }
 }
@@ -95,10 +90,6 @@ void load_new_file(void) {
 	uint32_t new_audio_file_samples = 0; // in 32bit samples
 	uint8_t byte_buff[4] = {0, 0, 0, 0};
 
-	// Free old audio data
-	empty_loaded_audio();
-	audio_file_samples = 0;
-
 	xil_printf("[load_new_file] Send new audio file now!\r\n");
 
 	// Get the File size - First four bytes transfered
@@ -106,6 +97,15 @@ void load_new_file(void) {
 		byte_buff[i] = inbyte();
  	}
 	new_audio_file_samples = bytes4_to_32bits(byte_buff);
+
+	// Validate new File Size
+	if (new_audio_file_samples > MAX_AUDIO_FILE_SAMPLES) {
+		xil_printf("Error! File size received [0xlx] is larger than maximum file size! [0xlx]", new_audio_file_samples, MAX_AUDIO_FILE_SAMPLES);
+	}
+
+	// Free old audio data
+	empty_loaded_audio();
+	audio_file_samples = 0;
 
 	// Read in new data
 	uint32_t sample;
@@ -119,7 +119,10 @@ void load_new_file(void) {
 		loaded_audio_file[sample] = bytes4_to_32bits(byte_buff);
 		// xil_printf("Sample: 0x%lx data: 0x%08lx\r\n", sample, loaded_audio_file[sample]);
 	}
+	xil_printf("[load_new_file] Completed loading new Audio file!\r\nReturning to main menu.\r\n");
 
+
+	// Debug File Loading...
 //	xil_printf("[load_new_file] New audio file size: 0x%lx\r\n", new_audio_file_samples);
 //	xil_printf("[load_new_file] Received data:\r\n");
 //	for (uint32_t i=0; i < new_audio_file_samples; i++) {

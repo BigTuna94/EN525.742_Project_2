@@ -64,44 +64,44 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_microblaze_0_0/proc_system_microblaze_0_0.xci">
+          <Proxy FileSetName="proc_system_microblaze_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_mdm_1_0/proc_system_mdm_1_0.xci">
+          <Proxy FileSetName="proc_system_mdm_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_ilmb_v10_0/proc_system_ilmb_v10_0.xci">
+          <Proxy FileSetName="proc_system_ilmb_v10_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_ilmb_bram_if_cntlr_0/proc_system_ilmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="proc_system_ilmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_axi_quad_spi_0_0/proc_system_axi_quad_spi_0_0.xci">
+          <Proxy FileSetName="proc_system_axi_quad_spi_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_axi_gpio_0_0/proc_system_axi_gpio_0_0.xci">
+          <Proxy FileSetName="proc_system_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_dlmb_bram_if_cntlr_0/proc_system_dlmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="proc_system_dlmb_bram_if_cntlr_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_rst_Clk_100M_0/proc_system_rst_Clk_100M_0.xci">
+          <Proxy FileSetName="proc_system_rst_Clk_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_axi_uartlite_0_0/proc_system_axi_uartlite_0_0.xci">
+          <Proxy FileSetName="proc_system_axi_uartlite_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_axis_data_fifo_0_0/proc_system_axis_data_fifo_0_0.xci">
+          <Proxy FileSetName="proc_system_axis_data_fifo_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_dlmb_v10_0/proc_system_dlmb_v10_0.xci">
           <Proxy FileSetName="proc_system_dlmb_v10_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_xbar_0/proc_system_xbar_0.xci">
           <Proxy FileSetName="proc_system_xbar_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_axi_gpio_0_0/proc_system_axi_gpio_0_0.xci">
-          <Proxy FileSetName="proc_system_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_rst_Clk_100M_0/proc_system_rst_Clk_100M_0.xci">
-          <Proxy FileSetName="proc_system_rst_Clk_100M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_axi_quad_spi_0_0/proc_system_axi_quad_spi_0_0.xci">
-          <Proxy FileSetName="proc_system_axi_quad_spi_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_dlmb_bram_if_cntlr_0/proc_system_dlmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="proc_system_dlmb_bram_if_cntlr_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_axis_data_fifo_0_0/proc_system_axis_data_fifo_0_0.xci">
-          <Proxy FileSetName="proc_system_axis_data_fifo_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_axi_uartlite_0_0/proc_system_axi_uartlite_0_0.xci">
-          <Proxy FileSetName="proc_system_axi_uartlite_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_ilmb_bram_if_cntlr_0/proc_system_ilmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="proc_system_ilmb_bram_if_cntlr_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_lmb_bram_0/proc_system_lmb_bram_0.xci">
           <Proxy FileSetName="proc_system_lmb_bram_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_ilmb_v10_0/proc_system_ilmb_v10_0.xci">
-          <Proxy FileSetName="proc_system_ilmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_microblaze_0_0/proc_system_microblaze_0_0.xci">
-          <Proxy FileSetName="proc_system_microblaze_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="proc_system.bd" FileRelPathName="ip/proc_system_mdm_1_0/proc_system_mdm_1_0.xci">
-          <Proxy FileSetName="proc_system_mdm_1_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/project_1_part_2.srcs/sources_1/imports/p1p2_src/lowlevel_dac_intfc.vhd">
@@ -146,6 +146,12 @@
         </FileInfo>
       </File>
       <File Path="$PSDKDIR/project2/Debug/project2.elf">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSDKDIR/project2/Release/project2.elf">
         <FileInfo>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="ScopedToRef" Val="proc_system"/>
